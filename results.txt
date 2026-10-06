@@ -1,0 +1,186 @@
+events x slots scored: 2678
+
+=== Scores by slot (Brier summed over brackets, mean over events; logloss of winning bracket) ===
+D 09:00
+          brier  logloss
+mkt      0.5746    1.035
+q_nbs    0.7106    1.394
+q_gfs    0.7062    1.393
+q_blend  0.6699    1.280
+D 12:00
+          brier  logloss
+mkt      0.5030    0.876
+q_nbs    0.7013    1.363
+q_gfs    0.7057    1.393
+q_blend  0.6621    1.266
+D-1 11:00
+          brier  logloss
+mkt      0.6540    1.251
+q_nbs    0.7383    1.489
+q_gfs    0.7439    1.521
+q_blend  0.7100    1.407
+D-1 18:00
+          brier  logloss
+mkt      0.6192    1.159
+q_nbs    0.7331    1.463
+q_gfs    0.7261    1.443
+q_blend  0.6940    1.350
+
+=== Scores by period x slot ===
+post(TWC) D 09:00 n_ev 364 {'mkt': 0.5843, 'q_blend': 0.6758, 'q_nbs': 0.7172} {'mkt': 1.056, 'q_blend': 1.312, 'q_nbs': 1.421}
+post(TWC) D 12:00 n_ev 364 {'mkt': 0.5121, 'q_blend': 0.6701, 'q_nbs': 0.7127} {'mkt': 0.905, 'q_blend': 1.305, 'q_nbs': 1.41}
+post(TWC) D-1 11:00 n_ev 358 {'mkt': 0.6519, 'q_blend': 0.7145, 'q_nbs': 0.7518} {'mkt': 1.239, 'q_blend': 1.425, 'q_nbs': 1.531}
+post(TWC) D-1 18:00 n_ev 364 {'mkt': 0.6212, 'q_blend': 0.7031, 'q_nbs': 0.7388} {'mkt': 1.157, 'q_blend': 1.385, 'q_nbs': 1.486}
+pre(NWS) D 09:00 n_ev 308 {'mkt': 0.5632, 'q_blend': 0.6629, 'q_nbs': 0.7028} {'mkt': 1.01, 'q_blend': 1.242, 'q_nbs': 1.362}
+pre(NWS) D 12:00 n_ev 308 {'mkt': 0.4922, 'q_blend': 0.6527, 'q_nbs': 0.6878} {'mkt': 0.843, 'q_blend': 1.219, 'q_nbs': 1.306}
+pre(NWS) D-1 11:00 n_ev 304 {'mkt': 0.6563, 'q_blend': 0.7046, 'q_nbs': 0.7224} {'mkt': 1.265, 'q_blend': 1.384, 'q_nbs': 1.439}
+pre(NWS) D-1 18:00 n_ev 308 {'mkt': 0.617, 'q_blend': 0.6832, 'q_nbs': 0.7263} {'mkt': 1.161, 'q_blend': 1.309, 'q_nbs': 1.437}
+
+=== Scores by city (all slots before D 12:00) ===
+KXHIGHAUS {'mkt': 0.5746, 'q_blend': 0.7011, 'q_nbs': 0.7232} {'mkt': 1.063, 'q_blend': 1.385, 'q_nbs': 1.404}
+KXHIGHCHI {'mkt': 0.6628, 'q_blend': 0.7137, 'q_nbs': 0.7417} {'mkt': 1.272, 'q_blend': 1.415, 'q_nbs': 1.524}
+KXHIGHDEN {'mkt': 0.6204, 'q_blend': 0.7362, 'q_nbs': 0.7132} {'mkt': 1.154, 'q_blend': 1.485, 'q_nbs': 1.509}
+KXHIGHLAX {'mkt': 0.5829, 'q_blend': 0.6855, 'q_nbs': 0.7687} {'mkt': 1.096, 'q_blend': 1.304, 'q_nbs': 1.559}
+KXHIGHMIA {'mkt': 0.6276, 'q_blend': 0.6214, 'q_nbs': 0.6772} {'mkt': 1.11, 'q_blend': 1.127, 'q_nbs': 1.248}
+KXHIGHNY {'mkt': 0.57, 'q_blend': 0.6314, 'q_nbs': 0.6984} {'mkt': 1.045, 'q_blend': 1.19, 'q_nbs': 1.317}
+KXHIGHPHIL {'mkt': 0.672, 'q_blend': 0.7487, 'q_nbs': 0.7684} {'mkt': 1.295, 'q_blend': 1.508, 'q_nbs': 1.577}
+
+=== Calibration (bins of prob; mean prob vs realised freq) ===
+mkt
+mkt   (0.0, 0.05]  (0.05, 0.15]  (0.15, 0.3]  (0.3, 0.5]  (0.5, 0.7]  (0.7, 0.85]  (0.85, 0.95]  (0.95, 1.0]
+n        6924.000      2700.000     2501.000    2614.000     978.000      148.000        42.000       19.000
+p           0.017         0.091        0.222       0.393       0.578        0.761         0.895        0.971
+freq        0.008         0.076        0.239       0.408       0.594        0.770         0.952        1.000
+q_blend
+q_blend  (0.0, 0.05]  (0.05, 0.15]  (0.15, 0.3]  (0.3, 0.5]  (0.5, 0.7]  (0.7, 0.85]  (0.85, 0.95]  (0.95, 1.0]
+n           5621.000      2968.000     3630.000    3210.000     427.000       49.000        13.000         8.00
+p              0.013         0.096        0.227       0.371       0.565        0.774         0.909         0.97
+freq           0.017         0.093        0.219       0.388       0.492        0.776         0.769         1.00
+
+=== Taker backtest: buy YES at ask / NO at 1-bid when model edge > thr; fee ceil(0.07P(1-P)) per contract ===
+q_blend 0.05 ALL {'n': 6946, 'hit': 0.365, 'avg_px': 0.371, 'pnl_per_ct': -0.0219, 'se': 0.0047, 't': -4.64, 'roi': -0.059}
+     D 09:00 {'n': 1794, 'hit': 0.35, 'avg_px': 0.348, 'pnl_per_ct': -0.0141, 'se': 0.0093, 't': -1.51, 'roi': -0.04}
+     D 12:00 {'n': 1706, 'hit': 0.327, 'avg_px': 0.324, 'pnl_per_ct': -0.0124, 'se': 0.0096, 't': -1.29, 'roi': -0.038}
+     D-1 11:00 {'n': 1682, 'hit': 0.392, 'avg_px': 0.407, 'pnl_per_ct': -0.0304, 'se': 0.0096, 't': -3.17, 'roi': -0.075}
+     D-1 18:00 {'n': 1764, 'hit': 0.389, 'avg_px': 0.404, 'pnl_per_ct': -0.031, 'se': 0.0093, 't': -3.32, 'roi': -0.077}
+     pre(NWS) {'n': 3198, 'hit': 0.364, 'avg_px': 0.369, 'pnl_per_ct': -0.0214, 'se': 0.0069, 't': -3.1, 'roi': -0.058}
+     post(TWC) {'n': 3748, 'hit': 0.365, 'avg_px': 0.371, 'pnl_per_ct': -0.0224, 'se': 0.0065, 't': -3.45, 'roi': -0.06}
+q_blend 0.1 ALL {'n': 4415, 'hit': 0.344, 'avg_px': 0.353, 'pnl_per_ct': -0.0252, 'se': 0.0061, 't': -4.1, 'roi': -0.071}
+     D 09:00 {'n': 1217, 'hit': 0.329, 'avg_px': 0.34, 'pnl_per_ct': -0.0264, 'se': 0.0117, 't': -2.24, 'roi': -0.078}
+     D 12:00 {'n': 1290, 'hit': 0.316, 'avg_px': 0.313, 'pnl_per_ct': -0.0125, 'se': 0.0113, 't': -1.1, 'roi': -0.04}
+     D-1 11:00 {'n': 871, 'hit': 0.383, 'avg_px': 0.395, 'pnl_per_ct': -0.0276, 'se': 0.0141, 't': -1.96, 'roi': -0.07}
+     D-1 18:00 {'n': 1037, 'hit': 0.363, 'avg_px': 0.384, 'pnl_per_ct': -0.0377, 'se': 0.0126, 't': -3.0, 'roi': -0.098}
+     pre(NWS) {'n': 2048, 'hit': 0.345, 'avg_px': 0.358, 'pnl_per_ct': -0.0295, 'se': 0.009, 't': -3.28, 'roi': -0.082}
+     post(TWC) {'n': 2367, 'hit': 0.343, 'avg_px': 0.349, 'pnl_per_ct': -0.0215, 'se': 0.0084, 't': -2.56, 'roi': -0.062}
+q_blend 0.15 ALL {'n': 2717, 'hit': 0.342, 'avg_px': 0.345, 'pnl_per_ct': -0.0198, 'se': 0.0079, 't': -2.5, 'roi': -0.057}
+     D 09:00 {'n': 798, 'hit': 0.332, 'avg_px': 0.333, 'pnl_per_ct': -0.0177, 'se': 0.0148, 't': -1.2, 'roi': -0.053}
+     D 12:00 {'n': 906, 'hit': 0.3, 'avg_px': 0.304, 'pnl_per_ct': -0.0207, 'se': 0.0134, 't': -1.54, 'roi': -0.068}
+     D-1 11:00 {'n': 454, 'hit': 0.388, 'avg_px': 0.386, 'pnl_per_ct': -0.0147, 'se': 0.0195, 't': -0.76, 'roi': -0.038}
+     D-1 18:00 {'n': 559, 'hit': 0.385, 'avg_px': 0.393, 'pnl_per_ct': -0.0252, 'se': 0.0176, 't': -1.43, 'roi': -0.064}
+     pre(NWS) {'n': 1296, 'hit': 0.346, 'avg_px': 0.35, 'pnl_per_ct': -0.0207, 'se': 0.0115, 't': -1.8, 'roi': -0.059}
+     post(TWC) {'n': 1421, 'hit': 0.338, 'avg_px': 0.34, 'pnl_per_ct': -0.0189, 'se': 0.0109, 't': -1.73, 'roi': -0.056}
+q_blend 0.2 ALL {'n': 1613, 'hit': 0.315, 'avg_px': 0.325, 'pnl_per_ct': -0.0268, 'se': 0.0104, 't': -2.57, 'roi': -0.082}
+     D 09:00 {'n': 496, 'hit': 0.306, 'avg_px': 0.326, 'pnl_per_ct': -0.0362, 'se': 0.0189, 't': -1.92, 'roi': -0.111}
+     D 12:00 {'n': 645, 'hit': 0.279, 'avg_px': 0.289, 'pnl_per_ct': -0.0269, 'se': 0.016, 't': -1.67, 'roi': -0.093}
+     D-1 11:00 {'n': 191, 'hit': 0.393, 'avg_px': 0.373, 'pnl_per_ct': 0.0034, 'se': 0.0323, 't': 0.1, 'roi': 0.009}
+     D-1 18:00 {'n': 281, 'hit': 0.359, 'avg_px': 0.373, 'pnl_per_ct': -0.0304, 'se': 0.0253, 't': -1.2, 'roi': -0.081}
+     pre(NWS) {'n': 766, 'hit': 0.324, 'avg_px': 0.337, 'pnl_per_ct': -0.0298, 'se': 0.0154, 't': -1.94, 'roi': -0.088}
+     post(TWC) {'n': 847, 'hit': 0.307, 'avg_px': 0.314, 'pnl_per_ct': -0.024, 'se': 0.0142, 't': -1.69, 'roi': -0.076}
+q_nbs 0.05 ALL {'n': 7320, 'hit': 0.342, 'avg_px': 0.363, 'pnl_per_ct': -0.0368, 'se': 0.0045, 't': -8.13, 'roi': -0.102}
+q_nbs 0.1 ALL {'n': 4831, 'hit': 0.322, 'avg_px': 0.346, 'pnl_per_ct': -0.0398, 'se': 0.0057, 't': -6.95, 'roi': -0.115}
+q_nbs 0.15 ALL {'n': 3184, 'hit': 0.314, 'avg_px': 0.337, 'pnl_per_ct': -0.0395, 'se': 0.0072, 't': -5.51, 'roi': -0.117}
+q_nbs 0.2 ALL {'n': 1964, 'hit': 0.296, 'avg_px': 0.324, 'pnl_per_ct': -0.0443, 'se': 0.0092, 't': -4.83, 'roi': -0.137}
+q_gfs 0.05 ALL {'n': 7721, 'hit': 0.383, 'avg_px': 0.384, 'pnl_per_ct': -0.0171, 'se': 0.0045, 't': -3.84, 'roi': -0.045}
+q_gfs 0.1 ALL {'n': 5411, 'hit': 0.365, 'avg_px': 0.365, 'pnl_per_ct': -0.0167, 'se': 0.0055, 't': -3.03, 'roi': -0.046}
+q_gfs 0.15 ALL {'n': 3726, 'hit': 0.358, 'avg_px': 0.349, 'pnl_per_ct': -0.0071, 'se': 0.0067, 't': -1.06, 'roi': -0.02}
+q_gfs 0.2 ALL {'n': 2453, 'hit': 0.361, 'avg_px': 0.338, 'pnl_per_ct': 0.006, 'se': 0.0084, 't': 0.71, 'roi': 0.018}
+
+blend thr .10 by city:
+    KXHIGHAUS {'n': 637, 'hit': 0.265, 'avg_px': 0.33, 'pnl_per_ct': -0.0816, 'se': 0.0158, 't': -5.17, 'roi': -0.247}
+    KXHIGHCHI {'n': 573, 'hit': 0.377, 'avg_px': 0.352, 'pnl_per_ct': 0.0086, 'se': 0.0174, 't': 0.5, 'roi': 0.025}
+    KXHIGHDEN {'n': 724, 'hit': 0.302, 'avg_px': 0.348, 'pnl_per_ct': -0.0616, 'se': 0.0144, 't': -4.26, 'roi': -0.177}
+    KXHIGHLAX {'n': 758, 'hit': 0.321, 'avg_px': 0.323, 'pnl_per_ct': -0.0187, 'se': 0.0144, 't': -1.3, 'roi': -0.058}
+    KXHIGHMIA {'n': 488, 'hit': 0.494, 'avg_px': 0.41, 'pnl_per_ct': 0.0668, 'se': 0.0196, 't': 3.4, 'roi': 0.163}
+    KXHIGHNY {'n': 583, 'hit': 0.358, 'avg_px': 0.364, 'pnl_per_ct': -0.0226, 'se': 0.0172, 't': -1.32, 'roi': -0.062}
+    KXHIGHPHIL {'n': 652, 'hit': 0.34, 'avg_px': 0.362, 'pnl_per_ct': -0.0382, 'se': 0.016, 't': -2.39, 'roi': -0.105}
+blend thr .10 by side:
+    no {'n': 2376, 'hit': 0.516, 'avg_px': 0.538, 'pnl_per_ct': -0.0417, 'se': 0.0097, 't': -4.3, 'roi': -0.077}
+    yes {'n': 2039, 'hit': 0.144, 'avg_px': 0.137, 'pnl_per_ct': -0.006, 'se': 0.007, 't': -0.86, 'roi': -0.044}
+blend thr .10 by price bucket:
+    (0.0, 0.1] {'n': 1055, 'hit': 0.043, 'avg_px': 0.055, 'pnl_per_ct': -0.0226, 'se': 0.0062, 't': -3.66, 'roi': -0.409}
+    (0.1, 0.3] {'n': 988, 'hit': 0.186, 'avg_px': 0.189, 'pnl_per_ct': -0.0178, 'se': 0.0121, 't': -1.47, 'roi': -0.095}
+    (0.3, 0.5] {'n': 963, 'hit': 0.421, 'avg_px': 0.415, 'pnl_per_ct': -0.0143, 'se': 0.0159, 't': -0.9, 'roi': -0.034}
+    (0.5, 0.7] {'n': 997, 'hit': 0.579, 'avg_px': 0.595, 'pnl_per_ct': -0.036, 'se': 0.0155, 't': -2.32, 'roi': -0.061}
+    (0.7, 0.9] {'n': 412, 'hit': 0.748, 'avg_px': 0.779, 'pnl_per_ct': -0.0489, 'se': 0.0212, 't': -2.31, 'roi': -0.063}
+blend thr .10 with exact (unrounded) fee: {'n': 4415, 'hit': 0.344, 'avg_px': 0.353, 'pnl_per_ct': -0.0206, 'se': 0.0061, 't': -3.35, 'roi': -0.058}
+
+=== Maker backtest (optimistic queue: filled if opposite quote later reaches our price) ===
+q_blend 0.05 {'n': 2425, 'hit': 0.39, 'avg_px': 0.399, 'pnl_per_ct': -0.0085, 'se': 0.0083, 't': -1.02, 'roi': -0.021}
+q_blend 0.1 {'n': 1616, 'hit': 0.374, 'avg_px': 0.381, 'pnl_per_ct': -0.0074, 'se': 0.0106, 't': -0.7, 'roi': -0.019}
+     D 09:00 {'n': 414, 'hit': 0.379, 'avg_px': 0.386, 'pnl_per_ct': -0.0069, 'se': 0.0207, 't': -0.33, 'roi': -0.018}
+     D 12:00 {'n': 521, 'hit': 0.355, 'avg_px': 0.354, 'pnl_per_ct': 0.0011, 'se': 0.0191, 't': 0.06, 'roi': 0.003}
+     D-1 11:00 {'n': 390, 'hit': 0.379, 'avg_px': 0.404, 'pnl_per_ct': -0.0249, 'se': 0.0214, 't': -1.16, 'roi': -0.062}
+     D-1 18:00 {'n': 291, 'hit': 0.392, 'avg_px': 0.391, 'pnl_per_ct': 0.0004, 'se': 0.0239, 't': 0.02, 'roi': 0.001}
+q_blend 0.15 {'n': 1066, 'hit': 0.368, 'avg_px': 0.374, 'pnl_per_ct': -0.0062, 'se': 0.0132, 't': -0.47, 'roi': -0.017}
+
+spread distribution at decision times: {0.01: 0.636, 0.02: 0.192, 0.03: 0.083, 0.04: 0.043, 0.05: 0.022, 0.06: 0.01}
+
+=== Liquidity ===
+contracts traded per event (whole life): median by city
+series
+KXHIGHAUS      61676.975
+KXHIGHCHI     100765.665
+KXHIGHDEN      42624.870
+KXHIGHLAX     567858.750
+KXHIGHMIA     152122.610
+KXHIGHNY      167575.565
+KXHIGHPHIL     40741.110
+Name: vol, dtype: float64
+median per-bracket lifetime volume: 12689.5  mean: 29565
+D 09:00 median contracts traded in the 3h after decision, per bracket: 1428.81  per event: 12681.255000000001
+D 12:00 median contracts traded in the 3h after decision, per bracket: 2027.58  per event: 21525.715
+D-1 11:00 median contracts traded in the 3h after decision, per bracket: 148.21  per event: 1310.835
+D-1 18:00 median contracts traded in the 3h after decision, per bracket: 225.875  per event: 1943.135
+signals (thr .10): median vol in 3h after signal on that bracket: 1291.17  signals/day: 45.99
+
+=== Encompassing test: logistic y ~ a + b1*logit(mkt) + b2*logit(model)  (b2>0 significant => model adds info) ===
+D 09:00 q_blend b_mkt=1.02(0.06) b_model=0.12(0.06) n=4012
+D 09:00 q_gfs b_mkt=1.00(0.05) b_model=0.18(0.05) n=4012
+D 12:00 q_blend b_mkt=1.04(0.05) b_model=0.11(0.06) n=4010
+D 12:00 q_gfs b_mkt=1.05(0.05) b_model=0.12(0.05) n=4010
+D-1 11:00 q_blend b_mkt=1.13(0.07) b_model=0.15(0.06) n=3943
+D-1 11:00 q_gfs b_mkt=1.13(0.06) b_model=0.17(0.05) n=3943
+D-1 18:00 q_blend b_mkt=1.20(0.07) b_model=0.06(0.07) n=3961
+D-1 18:00 q_gfs b_mkt=1.15(0.06) b_model=0.14(0.05) n=3961
+
+=== Kalshi settled value vs IEM NWS CLI daily high ===
+             n  mismatches  max_abs
+period                             
+post(TWC)  364           1      5.0
+pre(NWS)   308           0      0.0
+         series       date  truth  cli     period
+6924  KXHIGHMIA 2026-08-29   90.0   85  post(TWC)
+
+=== Walk-forward combo (market + MOS) taker backtest ===
+q_gfs out-of-sample scores {'brier': {'mkt': 0.587, 'p_combo': 0.5844}, 'logloss': {'mkt': 1.081, 'p_combo': 1.068}}
+   q_gfs 0.02 {'n': 2746, 'hit': 0.631, 'avg_px': 0.597, 'pnl_per_ct': 0.0168, 'se': 0.0081, 't': 2.07, 'roi': 0.028}
+   q_gfs 0.04 {'n': 988, 'hit': 0.601, 'avg_px': 0.561, 'pnl_per_ct': 0.022, 'se': 0.0141, 't': 1.56, 'roi': 0.039}
+       D 09:00 {'n': 211, 'hit': 0.645, 'avg_px': 0.6, 'pnl_per_ct': 0.0272, 'se': 0.0288, 't': 0.95, 'roi': 0.045}
+       D 12:00 {'n': 60, 'hit': 0.667, 'avg_px': 0.627, 'pnl_per_ct': 0.0208, 'se': 0.059, 't': 0.35, 'roi': 0.033}
+       D-1 11:00 {'n': 335, 'hit': 0.549, 'avg_px': 0.515, 'pnl_per_ct': 0.0161, 'se': 0.0254, 't': 0.63, 'roi': 0.031}
+       D-1 18:00 {'n': 382, 'hit': 0.613, 'avg_px': 0.57, 'pnl_per_ct': 0.0245, 'se': 0.0225, 't': 1.09, 'roi': 0.043}
+       post(TWC) {'n': 593, 'hit': 0.597, 'avg_px': 0.573, 'pnl_per_ct': 0.0062, 'se': 0.0185, 't': 0.34, 'roi': 0.011}
+       pre(NWS) {'n': 395, 'hit': 0.608, 'avg_px': 0.544, 'pnl_per_ct': 0.0457, 'se': 0.0219, 't': 2.09, 'roi': 0.084}
+   q_gfs 0.06 {'n': 353, 'hit': 0.603, 'avg_px': 0.544, 'pnl_per_ct': 0.0408, 'se': 0.0242, 't': 1.69, 'roi': 0.075}
+   q_gfs 0.1 {'n': 59, 'hit': 0.661, 'avg_px': 0.524, 'pnl_per_ct': 0.1178, 'se': 0.0586, 't': 2.01, 'roi': 0.225}
+q_blend out-of-sample scores {'brier': {'mkt': 0.587, 'p_combo': 0.5863}, 'logloss': {'mkt': 1.081, 'p_combo': 1.073}}
+   q_blend 0.02 {'n': 2512, 'hit': 0.619, 'avg_px': 0.601, 'pnl_per_ct': 0.0005, 'se': 0.0085, 't': 0.06, 'roi': 0.001}
+   q_blend 0.04 {'n': 797, 'hit': 0.57, 'avg_px': 0.537, 'pnl_per_ct': 0.0142, 'se': 0.0161, 't': 0.88, 'roi': 0.026}
+       D 09:00 {'n': 108, 'hit': 0.62, 'avg_px': 0.57, 'pnl_per_ct': 0.0314, 'se': 0.0441, 't': 0.71, 'roi': 0.055}
+       D 12:00 {'n': 69, 'hit': 0.58, 'avg_px': 0.597, 'pnl_per_ct': -0.0364, 'se': 0.0586, 't': -0.62, 'roi': -0.061}
+       D-1 11:00 {'n': 357, 'hit': 0.532, 'avg_px': 0.508, 'pnl_per_ct': 0.0057, 'se': 0.0241, 't': 0.24, 'roi': 0.011}
+       D-1 18:00 {'n': 263, 'hit': 0.597, 'avg_px': 0.547, 'pnl_per_ct': 0.0319, 'se': 0.0274, 't': 1.16, 'roi': 0.058}
+       post(TWC) {'n': 473, 'hit': 0.55, 'avg_px': 0.535, 'pnl_per_ct': -0.0039, 'se': 0.0219, 't': -0.18, 'roi': -0.007}
+       pre(NWS) {'n': 324, 'hit': 0.599, 'avg_px': 0.54, 'pnl_per_ct': 0.0406, 'se': 0.0234, 't': 1.73, 'roi': 0.075}
+   q_blend 0.06 {'n': 233, 'hit': 0.554, 'avg_px': 0.506, 'pnl_per_ct': 0.0281, 'se': 0.0307, 't': 0.92, 'roi': 0.056}
+   q_blend 0.1 {'n': 24, 'hit': 0.583, 'avg_px': 0.46, 'pnl_per_ct': 0.1038, 'se': 0.1002, 't': 1.04, 'roi': 0.226}
